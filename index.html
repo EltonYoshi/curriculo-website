@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origami Productions</title>
+     
+    <!--Google Fonts-->
+    <link rel="icon" type="favicon" href="./img/favicon.ico">
+
+    <!--CSS-->
+    <link rel="stylesheet" media="screen and (min-width: 500px)" href="style.css">
+    
+    <link rel="stylesheet" media="screen and (max-width: 500px) and (max-height: 950px)" href="style-mobile.css">
+
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Nunito+Sans:wght@700&family=Open+Sans:wght@300;400&display=swap">
+
+    <!--Boxicon-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--SmtpJS(send email)-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!--Javascript-->
+    <script src="./script.js"></script>
+
+
+</head>
+
+
+<body>
+
+    <!--Header-->
+
+    <header>
+        <div  id="nav-logo-container">
+            <img src="./img/logo-48x48.png" alt="logo" id="nav-logo">
+        </div>
+        <nav id="menu-container">
+            <button id="button-mobile" onclick="toggleMenu()">
+            <span id="hamburguer"></span></button>
+            <ul id="menu-list">
+                <li><a href="#section-description" class="options" id="option1">Home</a></li>
+                <li><a href="#section-contact" class="options" id="option2">Contato</a></li>
+                <li><a href="#section-about" class="options" id="option2">Sobre</a></li>
+                <li><a href="#section-skills" class="options" id="option3">Habilidades</a></li>
+                <li><a href="#section-portfolio" class="options" id="option4">Portfolio</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+
+    <!--Descrição-->
+
+    <section class="sections" id="section-description">
+        <div id="description">
+            <div id="social-midia-container">
+                <a href="https://github.com/EltonYoshi" class="social-midia"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.behance.net/origamiproductions" class="social-midia"><i class='bx bxl-behance' ></i></a>
+                <a href="linkedin.com/in/elton-yoshi-itokawa-guimarães-565097209 " class="social-midia"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <div id="description-text">
+                <h1 id="description-h1">Oi, <br>meu nome é <br>Elton Yoshi</h1>
+                <p id="description-p"> Tenho experiência na utilização de programas de Design Gráfico, tais como: Adobe Premiere, Photoshop e After Effects, afinal, atualmente, trabalho informalmente como freelancer, prestando serviços na área de design. Além disso, tenho facilidade na utilização de programas da área de TI e estou cursando Ciência da Computação.</p>
+                <button onclick="window.location.href='#section-contact';" class="buttons" id="social-midia-button">Contato</button>
+            </div>
+            <div id="img"></div>
+        </div>
+    </section>
+
+    <!--Sobre-->
+    <section class="sections" id="section-about">
+        <h1 class="section-title"> Sobre </h1>
+        
+        <div id="about-p-container">
+            <p id="about-text-p">Vale ressaltar que, mesmo não possuindo experiência profissional formalizada, a minha vivência dentro do meio escolar me mostrou que eu sou uma pessoa organizada e comprometida, tendo em vista que minhas notas eram altas e meus projetos sempre foram muito bem avaliados, situação que me qualificou, inclusive, como aluno destaque e representante de turma.</p>
+        </div>
+
+        <div id="about">
+            <div id="about-img-container">
+                <div id="cropper">
+                    <div id="about-img"></div>
+                </div>
+            </div>
+            <div id="about-text">
+                <div id="about-block-container">
+                    <p><span class="about-span">Idade</span><br>18 anos</p>
+                    <p><span class="about-span">Escolaridade</span><br>Ensino Médio Completo<br>Cursando Ciência da Computação - UniRitter</p>
+                    <p><span class="about-span">Telefone</span><br>(51) 98942-5367</p>
+                    <p><span class="about-span">Email</span><br>elton_yoshi@outlook.com</p>
+                </div>
+                <button onclick="window.location.href='https://bityli.com/MEiwI';" class="buttons" id="about-button"> Download CV </button>
+            </div>
+        </div>
+    </section>
+
+    <!--Habilidades-->
+    <section class="sections" id="section-skills">
+
+        <h1 class="section-title">Habilidades</h1>
+
+        <div id="skill-container">
+
+            <div id="skill-description">
+                <p id="skill-description-p">Tenho experiência na utilização de programas de Design Gráfico, tais como: Adobe Premiere, Photoshop e After Effects,afinal, atualmente, trabalho informalmente como freelancer, prestando serviços na área de design. Além disso, tenho facilidade na utilização de programas do pacote Office e na área de TI, visto que já possuo experiência com programação.</p>
+                <div id="graphs">
+                    <div id="skill-graph-adobe">
+                        <h2 class="bar-title"># adobe programas</h2>
+                        <div class="bar">
+                            <div class="bar-inner bar-70" data-percent="70%"></div>
+                        </div>
+    
+                        <h2 class="bar-title"># office programas</h2>
+                        <div class="bar">
+                            <div class="bar-inner bar-40" data-percent="40%"></div>
+                        </div>
+    
+                        <h2 class="bar-title"># dev</h2>
+                        <div class="bar">
+                            <div class="bar-inner bar-50" data-percent="50%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="skill-block-container">
+                    <div class="skill-blocks">
+                        <div class="circle-cropped">
+                            <div class="skills-icon"><i class='bx bxl-javascript' ></i></div>
+                        </div>
+                        <h2 class="skill-block-h2">javascript</h2>
+                        <h3 class="skill-block-h3">Iniciante</h3>
+                    </div>
+                    <div class="skill-blocks">
+                        <div class="circle-cropped">
+                            <div class="skills-icon"><i class='bx bxl-python'></i></div>
+                        </div>
+                        <h2 class="skill-block-h2">python</h2>
+                        <h3 class="skill-block-h3">Iniciante</h3>
+                    </div>
+                    <div class="skill-blocks">
+                        <div class="circle-cropped">
+                            <div class="skills-icon"><i class='bx bxl-c-plus-plus' ></i></div>
+                        </div>
+                        <h2 class="skill-block-h2">c++</h2>
+                        <h3 class="skill-block-h3">Iniciante</h3>
+                    </div>
+                    <div class="skill-blocks">
+                        <div class="circle-cropped">
+                            <div class="skills-icon"><i class='bx bxl-html5' ></i></div>
+                        </div>
+                        <h2 class="skill-block-h2">html/css</h2>
+                        <h3 class="skill-block-h3">Intermediário</h3>
+                    </div>
+                    </div>
+                </div>
+            
+
+            </div>
+        </div>  
+            
+    </section>
+    <!--Portfolio-->
+    <section class="sections" id="section-portfolio">
+        <h1 class="section-title">Portfolio</h1>
+
+        <div id="portfolio-area">
+                <div class="portfolio-cropped">
+                    <img class="portfolio-img" id="portfolio-img1" src="img/Portfolio/droid final.png"></img>
+                </div>
+                <div class="portfolio-cropped">
+                    <img class="portfolio-img" id="portfolio-img2" src="./img/Portfolio/prestigio.png"></img>
+                </div>
+                <div class="portfolio-cropped">
+                    <img class="portfolio-img" id="portfolio-img2" src="./img/Portfolio/bluecity.png"></img>
+                </div>
+                <div class="portfolio-cropped">
+                    <img class="portfolio-img" id="portfolio-img3" src="./img/Portfolio/3 é d+.png"></img>
+                </div>
+                <div class="portfolio-cropped">
+                    <img class="portfolio-img" id="portfolio-img4" src="./img/Portfolio/hype.png"></div>
+                </img>
+                <div class="portfolio-cropped">
+                    <img class="portfolio-img" id="portfolio-img5" src="./img/Portfolio/logo municred.png"></img>
+                </div>
+        </div>
+        <div id="portfolio-cont-container">
+            <div class="portfolio-cont">
+                <h2 class="portfolio-cont-h2">87</h2>
+                <h3 class="portfolio-cont-h3">+ trabalhos</h3>
+            </div>
+            <div class="portfolio-cont">
+                <h2 class="portfolio-cont-h2">1</h2>
+                <h3 class="portfolio-cont-h3"> + projetos</h3>
+            </div>
+            <div class="portfolio-cont">
+                <h2 class="portfolio-cont-h2">2</h2>
+                <h3 class="portfolio-cont-h3"> + anos de experiência</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--Contato-->
+    <section class="sections" id="section-contact">
+        <h1 class="section-title"> Contato </h1>
+        <div id="contact-container">
+            
+            <div id="contact-perfil">
+                <div id="contact-perfil-cropper">
+                    <div id="contact-perfil-img"></div>
+                </div>
+                <h2 id="contact-perfil-info"><span>Telefone</span><br>(51) 989425367<br><span>Email</span><br>elton_yoshi@outlook.com</h2>
+                <div id="contact-perfil-redes">
+                    <a href="https://www.facebook.com/eltonyoshiitokawaguimaraes.itokawaguimaraes/" class="social-midia"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/elton_yoshi/" class="social-midia"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com/itokawa_yoshi" class="social-midia"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+            <form id="contact-form" onsubmit="sendEmail(); reset(); return false">
+                <h3 id="contact-h3">@ entre em contato</h3>
+                <input type="name" id="contact-name" placeholder="seu nome" required>
+                <input type="email" id="contact-email" placeholder="email" required>
+                <input type="text" id="contact-phone" placeholder="seu telefone" required>
+                <textarea id="contact-message" rows="6" placeholder="como eu posso te ajudar ?"></textarea>
+                <button type="submit" class="buttons" id="contact-button"> Enviar </button>
+            </form>
+        </div>
+    </section>
+
+
+    <!--Rodapé-->
+    <section id="footer">
+        <div id="footer-contatos">
+            <a href="https://github.com/EltonYoshi" class="footer-contato"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.behance.net/origamiproductions" class="footer-contato"><i class='bx bxl-behance' ></i></a>
+            <a href="linkedin.com/in/elton-yoshi-itokawa-guimarães-565097209" class="footer-contato"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        <h3 id="footer-copy">© Copyright <br> all rights are reserved to Origami Productions</h3>
+    </section>
+
+</body>
+</html>
