@@ -1,11 +1,27 @@
 //===== Button Mobile =====
 
-const btnMobile = document.getElementById('button-mobile');
 
-function toggleMenu () {
-  const menu_container = document.getElementById('menu-container');
-  menu_container.classList.toggle('active');
+function toggleMenu() { 
+  const navMenu = document.getElementById('nav-menu');
+  navMenu.classList.toggle('show');
+  
+  const closeIcon = document.getElementById('close-icon');
+  closeIcon.classList.toggle('active');
+
+  const openIcon = document.getElementById('open-icon');
+  openIcon.classList.toggle('close');
 }
+
+//===== Ativar e remover =====
+
+
+function linkAction() {
+  const navMenu = document.getElementById('nav-menu')
+  navMenu.classList.remove('show')
+}
+
+
+
 
 
 //===== Form Contact =====
@@ -17,7 +33,7 @@ function sendEmail(){
         Subject : "Novo Contato",
         Body : "Nome: " + document.getElementById("contact-name").value + "<br>Email " + document.getElementById("contact-email").value  + "<br>Telefone: " + document.getElementById("contact-phone").value + "<br>Mensagem: " + document.getElementById("contact-message").value
     }).then(
-      message => alert("Mensagem envida com sucesso")
+      message => swal('Sua mensagem foi envida com sucesso!','', 'success')
     );
 }
 

@@ -20,6 +20,8 @@
     <!--Boxicon-->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
+    <!--SweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--SmtpJS(send email)-->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
@@ -39,15 +41,20 @@
             <img src="./img/logo-48x48.png" alt="logo" id="nav-logo">
         </div>
         <nav id="menu-container">
-            <button id="button-mobile" onclick="toggleMenu()">
-            <span id="hamburguer"></span></button>
-            <ul id="menu-list">
-                <li><a href="#section-description" class="options" id="option1">Home</a></li>
-                <li><a href="#section-contact" class="options" id="option2">Contato</a></li>
-                <li><a href="#section-about" class="options" id="option2">Sobre</a></li>
-                <li><a href="#section-skills" class="options" id="option3">Habilidades</a></li>
-                <li><a href="#section-portfolio" class="options" id="option4">Portfolio</a></li>
-            </ul>
+            <div id="nav-menu">
+                <ul id="menu-list">
+                    <li class="nav-item"><a href="#section-description" onclick = "linkAction()" class="options">Home</a></li>
+                    <li class="nav-item"><a href="#section-contact" onclick = "linkAction()"  class="options">Contato</a></li>
+                    <li class="nav-item"><a href="#section-about" onclick = "linkAction()"  class="options">Sobre</a></li>
+                    <li class="nav-item"><a href="#section-skills" onclick = "linkAction()"  class="options">Habilidades</a></li>
+                    <li class="nav-item"><a href="#section-portfolio" onclick = "linkAction()"  class="options">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle" onclick="toggleMenu()">
+                <div id="open-icon"><i  class='bx bx-menu'></i></div>
+                <div id="close-icon" ><i class='bx bx-x'></i></div>
+
+            </div>
         </nav>
         
     </header>
