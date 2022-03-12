@@ -181,6 +181,15 @@ header {
     width: 100%; 
     left: 0; 
   }
+  #social-midia-menu {
+    display: none;
+  }
+  #open-icon{
+    display: none;
+  }
+  #close-icon{
+    display: none;
+  }
   @media (max-width: 600px){
     #nav-logo {
         width: 38px;

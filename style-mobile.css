@@ -49,7 +49,7 @@ body {
     font-size: 2rem ;
     color: rgb(255, 255, 255);
 }
-.section-title::after{
+.section-title::after {
     position: absolute;
     content: "";
     width: 27px;
@@ -87,7 +87,7 @@ body {
     cursor: pointer;
     transition: background-color, color .2s ease-in-out;
 }
-.buttons:hover{
+.buttons:hover {
     background-color: var(--cor-secundaria);
     color: white;
 }
@@ -145,20 +145,19 @@ header {
 }
 #nav-menu {
     position: fixed;
-    top: 5.4rem;
+    top: 5.rem;
     right: -100%;
     width: 80%;
     height: 100%;
     padding: 2rem;
     font-size: 5.5rem;
-    background-color: var(--cor-fundo);
+    background-color: rgba(19, 19, 29, 0.979);
     font-family: var(--font-title);
     z-index: 2;
     transition: .5s;
 }
 #close-icon {
     display: none;
-    transition: .1s ease-in-out;
 }
 .nav-toggle {
     color: var(--cor-secundaria);
@@ -185,9 +184,6 @@ header {
     top: 3rem;
     background-color: var(--cor-secundaria);
 }
-
-
-
 #nav-menu.show {
     right: 0;
 }

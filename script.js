@@ -1,6 +1,5 @@
 //===== Button Mobile =====
 
-
 function toggleMenu() { 
   const navMenu = document.getElementById('nav-menu');
   navMenu.classList.toggle('show');
@@ -18,6 +17,12 @@ function toggleMenu() {
 function linkAction() {
   const navMenu = document.getElementById('nav-menu')
   navMenu.classList.remove('show')
+
+  const openIcon = document.getElementById('open-icon');
+  openIcon.classList.toggle('close');
+
+  const closeIcon = document.getElementById('close-icon');
+  closeIcon.classList.remove('active');
 }
 
 
